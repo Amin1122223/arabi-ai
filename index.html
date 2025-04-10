@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عربي AI - منصة الذكاء الاصطناعي العربية</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap');
+        body {
+            font-family: 'Tajawal', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+        }
+        .tool-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- شريط التنقل -->
+    <nav class="bg-indigo-700 text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2 space-x-reverse">
+                <i class="fas fa-robot text-2xl text-indigo-300"></i>
+                <a href="index.html" class="text-2xl font-bold">عربي AI</a>
+            </div>
+            
+            <div class="hidden md:flex items-center space-x-6 space-x-reverse">
+                <a href="index.html" class="hover:text-indigo-200">الرئيسية</a>
+                <a href="tools.html" class="hover:text-indigo-200">الأدوات</a>
+                <a href="articles.html" class="hover:text-indigo-200">المقالات</a>
+                <a href="pricing.html" class="hover:text-indigo-200">الأسعار</a>
+                <a href="about.html" class="hover:text-indigo-200">عنّا</a>
+                <a href="contact.html" class="bg-white text-indigo-700 px-4 py-2 rounded-lg font-medium hover:bg-gray-100">تسجيل الدخول</a>
+            </div>
+            
+            <button class="md:hidden text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- قسم البطل -->
+    <header class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">منصة الذكاء الاصطناعي العربية الشاملة</h1>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">أدوات متقدمة لإنشاء المحتوى، تحليل البيانات، الترجمة الآلية والكثير باستخدام أحدث تقنيات الذكاء الاصطناعي</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="tools.html" class="bg-white text-indigo-700 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">استكشف الأدوات</a>
+                <a href="pricing.html" class="bg-transparent border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-indigo-700 transition">الاشتراكات</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- قسم الميزات -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">لماذا تختار عربي AI؟</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-xl text-center">
+                    <div class="feature-icon bg-indigo-100 text-indigo-700 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-bolt text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">أدوات سريعة وفعّالة</h3>
+                    <p class="text-gray-600">احصل على نتائج فورية باستخدام خوارزميات الذكاء الاصطناعي المتطورة</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl text-center">
+                    <div class="feature-icon bg-indigo-100 text-indigo-700 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-language text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">مصممة للغة العربية</h3>
+                    <p class="text-gray-600">أدوات متخصصة لفهم وإنتاج المحتوى العربي بدقة عالية</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl text-center">
+                    <div class="feature-icon bg-indigo-100 text-indigo-700 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-shield-alt text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">آمن وخاص</h3>
+                    <p class="text-gray-600">بياناتك محمية بنظام تشفير متقدم وخصوصية مضمونة</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الأدوات -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center mb-12">
+                <h2 class="text-3xl font-bold">أدوات الذكاء الاصطناعي</h2>
+                <a href="tools.html" class="text-indigo-700 font-medium hover:underline">عرض الكل</a>
+            </div>
+            
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- أداة 1 -->
+                <div class="tool-card bg-white p-6 rounded-xl shadow-md transition duration-300">
+                    <div class="text-indigo-600 mb-4">
+                        <i class="fas fa-newspaper text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">منشئ المقالات</h3>
+                    <p class="text-gray-600 mb-4">أنشئ مقالات كاملة بجودة عالية في دقائق معدودة</p>
+                    <a href="article-generator.html" class="text-indigo-600 font-medium hover:underline">جرب الأداة</a>
+                </div>
+                
+                <!-- أداة 2 -->
+                <div class="tool-card bg-white p-6 rounded-xl shadow-md transition duration-300">
+                    <div class="text-indigo-600 mb-4">
+                        <i class="fas fa-palette text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">مصمم الشعارات</h3>
+                    <p class="text-gray-600 mb-4">اصمم شعارًا احترافيًا لعلامتك التجارية بلمسات ذكية</p>
+                    <a href="logo-maker.html" class="text-indigo-600 font-medium hover:underline">جرب الأداة</a>
+                </div>
+                
+                <!-- أداة 3 -->
+                <div class="tool-card bg-white p-6 rounded-xl shadow-md transition duration-300">
+                    <div class="text-indigo-600 mb-4">
+                        <i class="fas fa-comment-dots text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">مساعد الكتابة</h3>
+                    <p class="text-gray-600 mb-4">احصل على مساعدة في صياغة النصوص باحترافية</p>
+                    <a href="text-helper.html" class="text-indigo-600 font-medium hover:underline">جرب الأداة</a>
+                </div>
+                
+                <!-- أداة 4 -->
+                <div class="tool-card bg-white p-6 rounded-xl shadow-md transition duration-300">
+                    <div class="text-indigo-600 mb-4">
+                        <i class="fas fa-exchange-alt text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">مترجم ذكي</h3>
+                    <p class="text-gray-600 mb-4">ترجمة احترافية مع الحفاظ على السياق والمعنى</p>
+                    <a href="translator.html" class="text-indigo-600 font-medium hover:underline">جرب الأداة</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المقالات -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center mb-12">
+                <h2 class="text-3xl font-bold">أحدث المقالات</h2>
+                <a href="articles.html" class="text-indigo-700 font-medium hover:underline">عرض الكل</a>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- مقال 1 -->
+                <article class="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition">
+                    <img src="https://via.placeholder.com/600x400" alt="مقال عن الذكاء الاصطناعي" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm text-indigo-600">الذكاء الاصطناعي</span>
+                        <h3 class="text-xl font-semibold my-2">مقدمة إلى الذكاء الاصطناعي وتطبيقاته</h3>
+                        <p class="text-gray-600 mb-4">تعرف على الأساسيات والمفاهيم الرئيسية للذكاء الاصطناعي وتطبيقاته في العالم العربي</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="far fa-calendar-alt ml-2"></i>
+                            <span>15 نوفمبر 2023</span>
+                            <i class="far fa-clock mr-4 ml-2"></i>
+                            <span>5 دقائق قراءة</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- مقال 2 -->
+                <article class="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition">
+                    <img src="https://via.placeholder.com/600x400" alt="مقال عن تعلم الآلة" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm text-indigo-600">تعلم الآلة</span>
+                        <h3 class="text-xl font-semibold my-2">تعلم الآلة للمبتدئين: دليل شامل</h3>
+                        <p class="text-gray-600 mb-4">دليل شامل لفهم أساسيات تعلم الآلة وكيفية تطبيقه في المشاريع العربية</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="far fa-calendar-alt ml-2"></i>
+                            <span>10 نوفمبر 2023</span>
+                            <i class="far fa-clock mr-4 ml-2"></i>
+                            <span>7 دقائق قراءة</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- مقال 3 -->
+                <article class="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition">
+                    <img src="https://via.placeholder.com/600x400" alt="مقال عن NLP" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm text-indigo-600">معالجة اللغة</span>
+                        <h3 class="text-xl font-semibold my-2">معالجة اللغات الطبيعية للغة العربية</h3>
+                        <p class="text-gray-600 mb-4">كيف تفهم الآلات اللغة العربية وتتعامل مع تحدياتها الخاصة</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="far fa-calendar-alt ml-2"></i>
+                            <span>5 نوفمبر 2023</span>
+                            <i class="far fa-clock mr-4 ml-2"></i>
+                            <span>8 دقائق قراءة</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الاشتراكات -->
+    <section class="py-16 gradient-bg text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">اختر خطة الاشتراك المناسبة</h2>
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- الخطة الأساسية -->
+                <div class="bg-white text-gray-800 rounded-xl overflow-hidden shadow-lg">
+                    <div class="p-6 border-b">
+                        <h3 class="text-xl font-semibold mb-2">الخطة الأساسية</h3>
+                        <p class="text-gray-600">مناسبة للأفراد والبدء</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-4xl font-bold mb-4">49 ر.س <span class="text-lg font-normal text-gray-600">/شهر</span></div>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>5,000 كلمة شهريًا</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>10 صور ذكاء اصطناعي</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>أدوات الكتابة الأساسية</span>
+                            </li>
+                            <li class="flex items-center text-gray-400">
+                                <i class="fas fa-times text-red-500 mr-2"></i>
+                                <span>لا يوجد دعم أولوية</span>
+                            </li>
+                        </ul>
+                        <a href="#" class="block text-center bg-indigo-600 text-white py-3 rounded-lg font-medium hover:bg-indigo-700 transition">اختر هذه الخطة</a>
+                    </div>
+                </div>
+                
+                <!-- الخطة المميزة -->
+                <div class="bg-white text-gray-800 rounded-xl overflow-hidden shadow-lg transform scale-105 relative">
+                    <div class="absolute top-0 right-0 bg-yellow-400 text-gray-900 px-3 py-1 text-sm font-semibold">الأكثر شيوعًا</div>
+                    <div class="p-6 border-b">
+                        <h3 class="text-xl font-semibold mb-2">الخطة المميزة</h3>
+                        <p class="text-gray-600">للشركات الصغيرة والمحترفين</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-4xl font-bold mb-4">99 ر.س <span class="text-lg font-normal text-gray-600">/شهر</span></div>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>20,000 كلمة شهريًا</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>50 صور ذكاء اصطناعي</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>جميع أدوات الكتابة</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>دعم أولوية</span>
+                            </li>
+                        </ul>
+                        <a href="#" class="block text-center bg-indigo-600 text-white py-3 rounded-lg font-medium hover:bg-indigo-700 transition">اختر هذه الخطة</a>
+                    </div>
+                </div>
+                
+                <!-- الخطة المؤسسية -->
+                <div class="bg-white text-gray-800 rounded-xl overflow-hidden shadow-lg">
+                    <div class="p-6 border-b">
+                        <h3 class="text-xl font-semibold mb-2">الخطة المؤسسية</h3>
+                        <p class="text-gray-600">للشركات الكبيرة والفرق</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-4xl font-bold mb-4">249 ر.س <span class="text-lg font-normal text-gray-600">/شهر</span></div>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>100,000 كلمة شهريًا</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>200 صور ذكاء اصطناعي</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>جميع الأدوات المتقدمة</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>دعم فني مخصص</span>
+                            </li>
+                        </ul>
+                        <a href="#" class="block text-center bg-indigo-600 text-white py-3 rounded-lg font-medium hover:bg-indigo-700 transition">اختر هذه الخطة</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- تذييل الصفحة -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 space-x-reverse mb-4">
+                        <i class="fas fa-robot text-2xl text-indigo-300"></i>
+                        <span class="text-2xl font-bold">عربي AI</span>
+                    </div>
+                    <p class="text-gray-400">منصة متكاملة تقدم أدوات ذكاء اصطناعي متقدمة لمساعدة الأفراد والشركات في إنشاء محتوى متميز.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">روابط سريعة</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">الرئيسية</a></li>
+                        <li><a href="tools.html" class="text-gray-400 hover:text-white transition">الأدوات</a></li>
+                        <li><a href="articles.html" class="text-gray-400 hover:text-white transition">المقالات</a></li>
+                        <li><a href="pricing.html" class="text-gray-400 hover:text-white transition">الأسعار</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">الدعم الفني</h3>
+                    <ul class="space-y-2">
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition">اتصل بنا</a></li>
+                        <li><a href="faq.html" class="text-gray-400 hover:text-white transition">الأسئلة الشائعة</a></li>
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-white transition">سياسة الخصوصية</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-white transition">شروط الاستخدام</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">تابعنا</h3>
+                    <div class="flex space-x-4 space-x-reverse">
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-indigo-600 transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-indigo-600 transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-indigo-600 transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-indigo-600 transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                    <div class="mt-6">
+                        <h4 class="font-medium mb-2">اشترك في النشرة البريدية</h4>
+                        <div class="flex">
+                            <input type="email" placeholder="بريدك الإلكتروني" class="px-4 py-2 rounded-r-lg w-full focus:outline-none text-gray-800">
+                            <button class="bg-indigo-600 px-4 py-2 rounded-l-lg hover:bg-indigo-700 transition">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 عربي AI. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // تنشيط القائمة المتنقلة
+        document.querySelector('nav button').addEventListener('click', function() {
+            const navLinks = document.querySelector('nav .hidden');
+            navLinks.classList.toggle('hidden');
+            navLinks.classList.toggle('flex');
+            navLinks.classList.toggle('flex-col');
+            navLinks.classList.toggle('absolute');
+            navLinks.classList.toggle('top-16');
+            navLinks.classList.toggle('right-4');
+            navLinks.classList.toggle('bg-indigo-800');
+            navLinks.classList.toggle('p-4');
+            navLinks.classList.toggle('rounded-lg');
+        });
+        
+        // تأثير التمرير السلس
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
